@@ -1,6 +1,6 @@
 import React from "react";
 
-import onlineIcon from "../../Icons/onlineIcon.png";
+import onlineIcon from "../../Icons/corona.jfif";
 
 import "./TextContainer.css";
 
@@ -34,7 +34,11 @@ const TextContainer = ({ users }) => (
             {users.map(({ name }) => (
               <div key={name} className="activeItem">
                 {name}
-                <img alt="Online Icon" src={onlineIcon} />
+                <img
+                  alt="Online Icon"
+                  src={onlineIcon}
+                  style={{ height: "5vh", borderRadius: "80px" }}
+                />
               </div>
             ))}
           </h2>

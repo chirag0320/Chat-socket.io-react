@@ -1,9 +1,10 @@
 import React from "react";
+import background from "../../Icons/back.png";
 
 import "./Input.css";
 
 const Input = ({ setMessage, sendMessage, message }) => (
-  <form className="form">
+  <form className="form" style={{ background: { background } }}>
     <input
       className="input"
       type="text"
